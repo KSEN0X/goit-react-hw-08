@@ -14,11 +14,11 @@ import { PrivateRoute } from '../PrivateRoute/PrivateRoute';
 
 const HomePage = lazy(() => import('../../pages/HomePage/HomePage'));
 const RegisterPage = lazy(() =>
-  import('../../pages/RegisterPage/RegisterPage')
+  import('../../pages/RegisterPage')
 );
-const LoginPage = lazy(() => import('../../pages/LoginPage/LoginPage'));
+const LoginPage = lazy(() => import('../../pages/LoginPage'));
 const ContactsPage = lazy(() =>
-  import('../../pages/ContactsPage/ContactsPage')
+  import('../../pages/ContactsPage')
 );
 const NotFoundPage = lazy(() =>
   import('../../pages/NotFoundPage/NotFoundPage')

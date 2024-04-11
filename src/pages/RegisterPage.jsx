@@ -1,5 +1,5 @@
-import PageTitle from '../../components/PageTitle/PageTitle';
-import Registration from '../../components/Registration/Registration';
+import PageTitle from '../components/PageTitle/PageTitle';
+import Registration from '../components/Registration/Registration';
 
 import css from './RegisterPage.module.css';
 

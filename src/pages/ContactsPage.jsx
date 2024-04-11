@@ -1,7 +1,7 @@
 import css from './ContactsPage.module.css';
 import { useEffect } from 'react';
 import { useDispatch} from 'react-redux';
-import PageTitle from '../../components/PageTitle/PageTitle';
+import PageTitle from '../components/PageTitle/PageTitle';
 import Contacts from '../../components/App/Contacts/Contacts';
 import { fetchContacts } from '../../redux/contacts/operations';
 

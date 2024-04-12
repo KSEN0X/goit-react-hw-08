@@ -9,7 +9,7 @@ export default function SearchBox() {
   const filterValue = useSelector(state => state?.filters?.name);
 
   const handleChange = newValue => {
-    dispatch(changeFilter(newValue));
+    dispatch(changeFilter(newValue)); 
   };
 
   return (

@@ -20,6 +20,7 @@ export const fetchContacts = createAsyncThunk(
   }
 );
 
+//  додавання нового контакту, POST @/contacts
 export const addContact = createAsyncThunk(
   'contacts/addContact',
   async (newContact, thunkAPI) => {
@@ -37,6 +38,7 @@ export const addContact = createAsyncThunk(
   }
 );
 
+// видалення контакту за ID, DELETE @ /contacts/:id
 export const deleteContact = createAsyncThunk(
   'contacts/deleteContact',
   async (contactId, thunkAPI) => {
@@ -46,14 +48,14 @@ export const deleteContact = createAsyncThunk(
         icon: '👍',
         style: { gap: '5px' },
       });
-      return contactId;
+      return contactId; // Повертаємо ID видаленого контакту
     } catch (error) {
       toast.error(`Contact is not deleted: ${error.message}`);
       return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
-
+// оновлення контакту по ID, PATCH   @ /contacts/:id
 export const updateContact = createAsyncThunk(
   'contacts/updateContact',
   async ({ id, number, name }, thunkAPI) => {
